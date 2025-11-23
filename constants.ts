@@ -46,6 +46,19 @@ export const UNIT_DATA: Record<UnitCategory, UnitDef[]> = {
     u('dl', 'Deciliters', 'dl', 'metric', 100),
     u('liter', 'Liters', 'L', 'metric', 1000),
   ],
+  [UnitCategory.AREA]: [
+    // US
+    u('sq_in', 'Square Inches', 'sq in', 'us', 0.00064516),
+    u('sq_ft', 'Square Feet', 'sq ft', 'us', 0.092903),
+    u('sq_yd', 'Square Yards', 'sq yd', 'us', 0.836127),
+    u('acre', 'Acres', 'ac', 'us', 4046.86),
+    u('sq_mi', 'Square Miles', 'sq mi', 'us', 2589988),
+    // Metric
+    u('sq_cm', 'Square Centimeters', 'sq cm', 'metric', 0.0001),
+    u('sq_m', 'Square Meters', 'sq m', 'metric', 1),
+    u('hectare', 'Hectares', 'ha', 'metric', 10000),
+    u('sq_km', 'Square Kilometers', 'sq km', 'metric', 1000000),
+  ],
   [UnitCategory.SPEED]: [
     // US
     u('mph', 'Miles per Hour', 'mph', 'us', 0.44704),
@@ -98,6 +111,17 @@ export const RECOMMENDED_MAPPINGS: Record<string, string> = {
   'cl': 'floz', 
   'dl': 'cup', 
   'liter': 'gallon',
+
+  // Area
+  'sq_in': 'sq_cm',
+  'sq_ft': 'sq_m',
+  'sq_yd': 'sq_m',
+  'acre': 'hectare',
+  'sq_mi': 'sq_km',
+  'sq_cm': 'sq_in',
+  'sq_m': 'sq_ft',
+  'hectare': 'acre',
+  'sq_km': 'sq_mi',
 
   // Speed
   'mph': 'kmh', 

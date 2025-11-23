@@ -5,7 +5,8 @@ export enum UnitCategory {
   WEIGHT = 'Weight',
   VOLUME = 'Volume',
   SPEED = 'Speed',
-  TEMPERATURE = 'Temperature'
+  TEMPERATURE = 'Temperature',
+  AREA = 'Area'
 }
 
 export type UnitSystem = 'us' | 'metric';
