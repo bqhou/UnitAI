@@ -1,0 +1,5 @@
+{
+  "name": "UnitAI",
+  "description": "A smart unit converter that transforms US units to International System units, providing AI-generated real-world examples and context to help you visualize the magnitude.",
+  "requestFramePermissions": []
+}
